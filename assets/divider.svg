@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
+  <defs>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FA0B0" stop-opacity="0" />
+      <stop offset="50%" stop-color="#8FA0B0" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#8FA0B0" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      .scan-line {
+        animation: scanSweep 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .node-pulse {
+        animation: amberPulse 3.5s ease-in-out infinite;
+      }
+      @keyframes scanSweep {
+        0% { transform: translateX(-300px); }
+        100% { transform: translateX(1200px); }
+      }
+      @keyframes amberPulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .scan-line { animation: none; transform: translateX(350px); opacity: 0.3; }
+        .node-pulse { animation: none; opacity: 0.8; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="24" fill="#161C24" />
+
+  <!-- Tactical Baseline & Grid -->
+  <line x1="20" y1="12" x2="880" y2="12" stroke="#2E3946" stroke-width="1" />
+  <line x1="20" y1="7" x2="20" y2="17" stroke="#2E3946" stroke-width="1.5" />
+  <line x1="880" y1="7" x2="880" y2="17" stroke="#2E3946" stroke-width="1.5" />
+
+  <!-- Center HUD Data Ticks -->
+  <line x1="200" y1="9" x2="200" y2="15" stroke="#2E3946" stroke-width="1" />
+  <line x1="450" y1="6" x2="450" y2="18" stroke="#8FA0B0" stroke-width="1" stroke-opacity="0.6" />
+  <line x1="700" y1="9" x2="700" y2="15" stroke="#2E3946" stroke-width="1" />
+
+  <!-- Sub-ticks -->
+  <line x1="430" y1="10" x2="430" y2="14" stroke="#2E3946" stroke-width="1" />
+  <line x1="470" y1="10" x2="470" y2="14" stroke="#2E3946" stroke-width="1" />
+
+  <!-- Terminal Warning Pips (<5% amber) -->
+  <rect x="26" y="10.5" width="3" height="3" fill="#D98E32" class="node-pulse" />
+  <rect x="871" y="10.5" width="3" height="3" fill="#D98E32" class="node-pulse" />
+
+  <!-- Dynamic Sweeping Scanline Laser -->
+  <g class="scan-line">
+    <rect x="0" y="11" width="220" height="2" fill="url(#scanGrad)" />
+    <circle cx="110" cy="12" r="1.8" fill="#CDD5E0" />
+  </g>
+</svg>
