@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+
+    <!-- Background Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0616" />
+      <stop offset="35%" stop-color="#160c28" />
+      <stop offset="70%" stop-color="#241038" />
+      <stop offset="100%" stop-color="#0d071a" />
+    </linearGradient>
+
+    <radialGradient id="hazeMist1" cx="20%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#0b0616" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="hazeMist2" cx="85%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.16" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0b0616" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Sakura Petal Gradient (Inspired by Watercolor Reference Images) -->
+    <linearGradient id="petalGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b8b" />
+      <stop offset="40%" stop-color="#ff9ebb" />
+      <stop offset="85%" stop-color="#ffdbe4" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <linearGradient id="petalGradSoft" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#fbcfe8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95" />
+    </linearGradient>
+
+    <radialGradient id="blossomCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="40%" stop-color="#f43f5e" />
+      <stop offset="70%" stop-color="#ff7597" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffb7c5" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Branch Gradient -->
+    <linearGradient id="branchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#422518" />
+      <stop offset="50%" stop-color="#5c382b" />
+      <stop offset="100%" stop-color="#3d2116" />
+    </linearGradient>
+
+    <!-- Watercolor Ribbon Gradient (Inspired by Image 4 Frame Set) -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="50%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7597" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#ffb7c5" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="sakuraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur" />
+      <feFlood flood-color="#ff7597" flood-opacity="0.7" result="flood" />
+      <feComposite in="flood" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bokehBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" />
+    </filter>
+
+    <!-- Notched Sakura Petal (Single Petal) -->
+    <g id="sakuraPetal">
+      <path d="M 0,0 C -6,-8 -12,-18 -4,-23 C -1.5,-21.5 0,-19.5 0,-19.5 C 0,-19.5 1.5,-21.5 4,-23 C 12,-18 6,-8 0,0 Z" fill="url(#petalGrad)" />
+      <line x1="0" y1="-2" x2="0" y2="-15" stroke="#f43f5e" stroke-width="0.7" opacity="0.35" />
+    </g>
+
+    <!-- Full 5-Petal Blooming Cherry Blossom (Reference Images 1 and 4) -->
+    <g id="cherryBlossom">
+      <g transform="rotate(0)"><use href="#sakuraPetal" /></g>
+      <g transform="rotate(72)"><use href="#sakuraPetal" /></g>
+      <g transform="rotate(144)"><use href="#sakuraPetal" /></g>
+      <g transform="rotate(216)"><use href="#sakuraPetal" /></g>
+      <g transform="rotate(288)"><use href="#sakuraPetal" /></g>
+      <!-- Center -->
+      <circle cx="0" cy="0" r="4.5" fill="url(#blossomCenter)" />
+      <circle cx="0" cy="0" r="1.8" fill="#fbbf24" />
+      <circle cx="-2.5" cy="-2.5" r="0.8" fill="#f59e0b" />
+      <circle cx="2.5" cy="-2.5" r="0.8" fill="#f59e0b" />
+      <circle cx="-3" cy="2" r="0.8" fill="#f59e0b" />
+      <circle cx="3" cy="2" r="0.8" fill="#f59e0b" />
+    </g>
+
+    <!-- Small Flower Bud -->
+    <g id="sakuraBud">
+      <path d="M 0,0 C -2.5,-4 -2.5,-8 0,-11 C 2.5,-8 2.5,-4 0,0 Z" fill="#ff7597" />
+      <path d="M -1.8,0 C -1.8,-2.5 0,-4 0,-4 C 0,-4 1.8,-2.5 1.8,0 Z" fill="#65a30d" opacity="0.8" />
+    </g>
+
+    <!-- Corner Sakura Branch (Top-Right, like Image 1) -->
+    <g id="branchTopRight">
+      <!-- Main Woody Branch -->
+      <path d="M 280,-20 C 230,20 180,35 120,40 C 70,44 20,30 -20,25" fill="none" stroke="url(#branchGrad)" stroke-width="5" stroke-linecap="round" />
+      <!-- Offshoot twigs -->
+      <path d="M 190,32 C 160,55 130,85 100,105" fill="none" stroke="url(#branchGrad)" stroke-width="3" stroke-linecap="round" />
+      <path d="M 135,42 C 110,20 85,15 60,10" fill="none" stroke="url(#branchGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 80,43 C 55,60 30,70 10,75" fill="none" stroke="url(#branchGrad)" stroke-width="2.2" stroke-linecap="round" />
+
+      <!-- Flower Clusters on Branch -->
+      <g transform="translate(190, 32) scale(1.1) rotate(15)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(145, 65) scale(0.9) rotate(45)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(100, 105) scale(0.85) rotate(-20)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(130, 18) scale(0.75) rotate(70)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(60, 10) scale(0.7) rotate(-35)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(80, 43) scale(1.0) rotate(110)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(10, 75) scale(0.8) rotate(30)"><use href="#cherryBlossom" /></g>
+
+      <!-- Buds -->
+      <g transform="translate(90, 115) scale(1.1) rotate(50)"><use href="#sakuraBud" /></g>
+      <g transform="translate(45, 12) scale(1) rotate(-60)"><use href="#sakuraBud" /></g>
+      <g transform="translate(-5, 78) scale(1) rotate(80)"><use href="#sakuraBud" /></g>
+    </g>
+
+    <!-- Corner Sakura Branch (Bottom-Left, like Image 1) -->
+    <g id="branchBottomLeft">
+      <path d="M -20,20 C 30,10 80,0 130,-15 C 180,-30 220,-60 250,-90" fill="none" stroke="url(#branchGrad)" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M 70,3 C 95,25 120,40 145,50" fill="none" stroke="url(#branchGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 140,-18 C 165,5 185,20 205,30" fill="none" stroke="url(#branchGrad)" stroke-width="2.2" stroke-linecap="round" />
+
+      <!-- Flower Clusters -->
+      <g transform="translate(40, 8) scale(0.9) rotate(-15)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(130, -15) scale(1.05) rotate(35)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(200, -50) scale(0.85) rotate(80)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(250, -90) scale(0.75) rotate(15)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(145, 50) scale(0.8) rotate(-45)"><use href="#cherryBlossom" /></g>
+      <g transform="translate(205, 30) scale(0.7) rotate(60)"><use href="#cherryBlossom" /></g>
+
+      <!-- Buds -->
+      <g transform="translate(260, -98) scale(1) rotate(30)"><use href="#sakuraBud" /></g>
+      <g transform="translate(155, 55) scale(1) rotate(-30)"><use href="#sakuraBud" /></g>
+    </g>
+
+    <!-- Swallowtail Ribbon Banner (From Image 4 Frame Set) -->
+    <g id="ribbonBanner">
+      <!-- Ribbon body with swallowtail cuts -->
+      <path d="M 20,0 L 260,0 L 245,18 L 260,36 L 20,36 L 35,18 Z" fill="url(#ribbonGrad)" opacity="0.9" />
+      <!-- Subtle highlight -->
+      <path d="M 28,3 L 252,3 L 240,18 L 252,33 L 28,33 L 40,18 Z" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.35" />
+    </g>
+
+  </defs>
+
+  <style>
+    /* Swirling Petal Falling Keyframes (Like Reference Images 2 and 3) */
+    @keyframes petalFall1 {
+      0% {
+        transform: translate(0px, -30px) rotate(0deg);
+        opacity: 0;
+      }
+      12% { opacity: 0.95; }
+      50% { transform: translate(70px, 150px) rotate(190deg); }
+      88% { opacity: 0.9; }
+      100% {
+        transform: translate(140px, 350px) rotate(380deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes petalFall2 {
+      0% {
+        transform: translate(0px, -25px) rotate(0deg);
+        opacity: 0;
+      }
+      15% { opacity: 0.9; }
+      50% { transform: translate(-60px, 160px) rotate(-160deg); }
+      85% { opacity: 0.9; }
+      100% {
+        transform: translate(-120px, 350px) rotate(-320deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes petalFall3 {
+      0% {
+        transform: translate(0px, -35px) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.85; }
+      50% { transform: translate(85px, 170px) rotate(220deg); }
+      88% { opacity: 0.85; }
+      100% {
+        transform: translate(160px, 350px) rotate(440deg);
+        opacity: 0;
+      }
+    }
+
+    .pf1 { animation: petalFall1 linear infinite; }
+    .pf2 { animation: petalFall2 linear infinite; }
+    .pf3 { animation: petalFall3 linear infinite; }
+
+    /* Pulsing Glow on Ribbon */
+    @keyframes ribbonPulse {
+      0%, 100% { filter: drop-shadow(0 0 6px rgba(251, 113, 133, 0.5)); }
+      50% { filter: drop-shadow(0 0 14px rgba(244, 114, 182, 0.9)); }
+    }
+    .ribbon-glow {
+      animation: ribbonPulse 3.2s ease-in-out infinite;
+    }
+
+    /* Soft Branch Sway */
+    @keyframes branchSway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(1.2deg); }
+    }
+    .branch-anim {
+      transform-origin: top right;
+      animation: branchSway 6s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base and Atmospheric Watercolor Mist -->
+  <rect width="1200" height="320" fill="url(#skyGrad)" />
+  <rect width="1200" height="320" fill="url(#hazeMist1)" />
+  <rect width="1200" height="320" fill="url(#hazeMist2)" />
+
+  <!-- Gentle Wind Stream Lines (Like Image 3 Swirl) -->
+  <path d="M -50,110 Q 250,70 550,120 T 1250,80" fill="none" stroke="rgba(255, 183, 197, 0.18)" stroke-width="1.8" stroke-dasharray="12 8" />
+  <path d="M -50,210 Q 300,160 650,220 T 1250,170" fill="none" stroke="rgba(244, 114, 182, 0.14)" stroke-width="1.5" stroke-dasharray="10 6" />
+
+  <!-- Corner Sakura Branches (Inspired by Reference Image 1) -->
+  <g class="branch-anim" transform="translate(1010, 0)">
+    <use href="#branchTopRight" />
+  </g>
+  <g transform="translate(0, 310)">
+    <use href="#branchBottomLeft" />
+  </g>
+
+  <!-- Blurred Background Petals for Bokeh Depth of Field (Images 2 and 3) -->
+  <g filter="url(#bokehBlur)" opacity="0.55">
+    <g class="pf1" style="animation-duration: 4.8s; animation-delay: 0.5s;">
+      <g transform="translate(220, 0) scale(1.4)"><use href="#sakuraPetal" /></g>
+    </g>
+    <g class="pf2" style="animation-duration: 5.6s; animation-delay: 2.1s;">
+      <g transform="translate(580, 0) scale(1.6)"><use href="#sakuraPetal" /></g>
+    </g>
+    <g class="pf3" style="animation-duration: 5.2s; animation-delay: 3.7s;">
+      <g transform="translate(880, 0) scale(1.3)"><use href="#sakuraPetal" /></g>
+    </g>
+  </g>
+
+  <!-- In-Focus Swirling Falling Petals and Blossoms (Images 2 and 3) -->
+  <g class="pf1" style="animation-duration: 5.8s; animation-delay: 0.2s;">
+    <g transform="translate(140, 0) scale(0.9)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf2" style="animation-duration: 6.5s; animation-delay: 1.5s;">
+    <g transform="translate(290, 0) scale(1.05)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf3" style="animation-duration: 7.2s; animation-delay: 3.2s;">
+    <g transform="translate(420, 0) scale(0.85)"><use href="#cherryBlossom" /></g>
+  </g>
+  <g class="pf1" style="animation-duration: 6.1s; animation-delay: 0.9s;">
+    <g transform="translate(540, 0) scale(0.95)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf2" style="animation-duration: 5.9s; animation-delay: 2.4s;">
+    <g transform="translate(680, 0) scale(1)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf3" style="animation-duration: 6.8s; animation-delay: 4.1s;">
+    <g transform="translate(790, 0) scale(0.8)"><use href="#cherryBlossom" /></g>
+  </g>
+  <g class="pf1" style="animation-duration: 6.4s; animation-delay: 1.8s;">
+    <g transform="translate(920, 0) scale(1.1)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf2" style="animation-duration: 6.7s; animation-delay: 3.5s;">
+    <g transform="translate(1040, 0) scale(0.9)"><use href="#sakuraPetal" /></g>
+  </g>
+  <g class="pf3" style="animation-duration: 6.3s; animation-delay: 4.8s;">
+    <g transform="translate(470, 0) scale(0.95)"><use href="#sakuraPetal" /></g>
+  </g>
+
+  <!-- Central Visual Branding / Title -->
+  <g text-anchor="middle">
+    <!-- Ribbon Banner Tag: BACKEND ENGINEER (Image 4 Ribbon Style) -->
+    <g transform="translate(460, 50)" class="ribbon-glow">
+      <use href="#ribbonBanner" />
+      <text x="140" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" letter-spacing="3">
+        🌸 BACKEND ENGINEER 🌸
+      </text>
+    </g>
+
+    <!-- Main Name: PHI CONG THANH -->
+    <text x="600" y="146" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="4" filter="url(#sakuraGlow)">
+      PHI CONG THANH
+    </text>
+
+    <!-- Subtitle Line -->
+    <text x="600" y="188" fill="#fbcfe8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" letter-spacing="2">
+      Scalable Architecture • High-Performance Systems • Database Engineering
+    </text>
+
+    <!-- Academic Tag: Ho Chi Minh City Open University -->
+    <g transform="translate(600, 238)">
+      <rect x="-210" y="-16" width="420" height="32" rx="10" fill="#1c0f2e" fill-opacity="0.8" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+      <text x="0" y="5" fill="#fbcfe8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" letter-spacing="0.5">
+        🏛️ Ho Chi Minh City Open University (HCMCOU)
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Gradient Border -->
+  <line x1="0" y1="318" x2="1200" y2="318" stroke="url(#ribbonGrad)" stroke-width="2" opacity="0.8" />
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="50%" stop-color="#0a1226" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <linearGradient id="footerMeteorTail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.5" />
+      <stop offset="90%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+
+    <filter id="fglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes ftwinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    .fstar { animation: ftwinkle 2.5s ease-in-out infinite; }
+    .fs-1 { animation-delay: 0.3s; }
+    .fs-2 { animation-delay: 1.2s; }
+    .fs-3 { animation-delay: 1.9s; }
+
+    @keyframes fmeteor {
+      0% {
+        transform: translate(0px, 0px) rotate(-35deg);
+        opacity: 0;
+      }
+      15% { opacity: 1; }
+      70% { opacity: 1; }
+      100% {
+        transform: translate(-500px, 350px) rotate(-35deg);
+        opacity: 0;
+      }
+    }
+
+    .fm-item {
+      position: absolute;
+      transform-origin: center;
+      opacity: 0;
+      animation: fmeteor linear infinite;
+    }
+
+    .fm1 { animation-duration: 2.5s; animation-delay: 0.5s; }
+    .fm2 { animation-duration: 3.1s; animation-delay: 1.8s; }
+    .fm3 { animation-duration: 2.8s; animation-delay: 3.2s; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="120" fill="url(#footerBg)" />
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="40" r="1.2" class="fstar fs-1" opacity="0.6" />
+    <circle cx="220" cy="80" r="1.5" class="fstar fs-2" opacity="0.8" />
+    <circle cx="380" cy="30" r="1" class="fstar fs-3" opacity="0.5" />
+    <circle cx="510" cy="90" r="1.5" class="fstar fs-1" opacity="0.7" />
+    <circle cx="670" cy="45" r="1.2" class="fstar fs-2" opacity="0.6" />
+    <circle cx="820" cy="75" r="1.8" class="fstar fs-3" opacity="0.9" />
+    <circle cx="980" cy="35" r="1.2" class="fstar fs-1" opacity="0.6" />
+    <circle cx="1120" cy="85" r="1.5" class="fstar fs-2" opacity="0.8" />
+  </g>
+
+  <!-- Shooting Stars in Footer -->
+  <g class="fm-item fm1" transform="translate(1050, -30)">
+    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#footerMeteorTail)" stroke-width="2.2" filter="url(#fglow)" />
+    <circle cx="150" cy="0" r="2.5" fill="#ffffff" filter="url(#fglow)" />
+  </g>
+
+  <g class="fm-item fm2" transform="translate(700, -30)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="url(#footerMeteorTail)" stroke-width="2.0" filter="url(#fglow)" />
+    <circle cx="160" cy="0" r="2.2" fill="#ffffff" filter="url(#fglow)" />
+  </g>
+
+  <g class="fm-item fm3" transform="translate(400, -20)">
+    <line x1="0" y1="0" x2="130" y2="0" stroke="url(#footerMeteorTail)" stroke-width="1.8" filter="url(#fglow)" />
+    <circle cx="130" cy="0" r="2.0" fill="#ffffff" filter="url(#fglow)" />
+  </g>
+
+  <!-- Top accent border line -->
+  <line x1="0" y1="1" x2="1200" y2="1" stroke="url(#footerMeteorTail)" stroke-width="1.5" opacity="0.4" />
+</svg>
