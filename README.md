@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/LeetCode-161618?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode Badge" />
   </a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/th%C3%A0nh-phi-c%C3%B4ng-85b4583b3/" target="_blank">
+  <a href="https://www.linkedin.com/in/phicongthanh/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-161618?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn Badge" />
   </a>
   &nbsp;
