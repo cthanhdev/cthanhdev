@@ -36,13 +36,14 @@
   <tr>
     <td width="62%" valign="top">
       <ul>
-        <li>👨‍💻 <b>Began the journey</b> in Software Engineering with <b>Java</b> &amp; enterprise application development.</li>
-        <li>💡 <b>Passionate about</b> backend ecosystems: <b>Java</b>, <b>Spring Boot</b>, <b>RESTful APIs</b>, and <b>Microservices</b>.</li>
-        <li>🐘 <b>Data-driven</b> with extensive experience in <b>SQL</b>, <b>PostgreSQL</b>, and schema design.</li>
-        <li>🐳 <b>Embracing DevOps</b> workflows using <b>Docker</b>, containerization, and <b>GitHub Actions</b> CI/CD.</li>
-        <li>🐍 <b>Explore</b> automation scripting and data processing pipelines with <b>Python</b>.</li>
-        <li>🎓 <b>Continuous Learner</b>: Dedicating time to clean architecture, design patterns, and system scalability.</li>
-        <li>⚡ <b>A creative mind</b> always open to discussions, eager to learn with passion &amp; dedication.</li>
+        <li>👨‍💻 <b>Backend &amp; Data Engineer</b> with a foundation in <b>Java</b> and enterprise application development.</li>
+        <li>⚙️ <b>Building robust backends</b> with <b>Java</b>, <b>Spring Boot</b>, <b>RESTful APIs</b>, and <b>Microservices</b> architecture.</li>
+        <li>🐘 <b>Data-driven mindset</b>: strong in <b>SQL</b>, <b>PostgreSQL</b>, schema design, query optimization, and data modeling.</li>
+        <li>🔄 <b>Designing data pipelines</b> (<b>ETL/ELT</b>, batch processing) and automation workflows with <b>Python</b>.</li>
+        <li>🌊 <b>Expanding into the data ecosystem</b>: Apache Airflow, Kafka, Spark, and data warehousing concepts.</li>
+        <li>🐳 <b>Embracing DevOps</b> with <b>Docker</b>, containerization, and <b>GitHub Actions</b> CI/CD.</li>
+        <li>🎓 <b>Continuous learner</b>: clean architecture, design patterns, system scalability, and reliable data infrastructure.</li>
+        <li>⚡ <b>Always open to discussions</b>, collaboration, and learning with passion &amp; dedication.</li>
         <li>🌟 <i>Big fan of anime aesthetics &amp; pixel art magic (Roxy Migurdia vibes)!</i></li>
       </ul>
       <br/>
@@ -126,15 +127,11 @@
 
 ---
 
-<!-- 7. TOP REPOSITORY & RANDOM DEV QUOTE -->
-<h2 align="center">⭐ Top Repository &amp; 💬 Dev Quote</h2>
+<!-- 7. DEV QUOTE -->
+<h2 align="center">💬 Words of Wisdom</h2>
 
 <p align="center">
-  <a href="https://github.com/cthanhdev/cthanhdev">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=cthanhdev&repo=cthanhdev&theme=tokyonight&hide_border=true&title_color=00f2fe&bg_color=0d1117" alt="Pinned Profile Repo" height="155" />
-  </a>
-  &nbsp;&nbsp;
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Random Dev Quote" height="155" />
+  <img src="./assets/quote_card.svg" alt="Linus Torvalds Quote: Talk is cheap. Show me the code." width="760" />
 </p>
 
 ---
