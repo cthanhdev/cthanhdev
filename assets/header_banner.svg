@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Neon Glow Gradient -->
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+
+    <linearGradient id="neon-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="terminal-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+    .cursor { animation: blink 1s infinite; }
+    .font-mono { font-family: 'Courier New', Courier, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 800; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="920" height="280" rx="14" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <rect width="920" height="280" rx="14" fill="url(#grid-pattern)" />
+
+  <!-- Outer Cyber Border -->
+  <rect x="1.5" y="1.5" width="917" height="277" rx="13" fill="none" stroke="url(#neon-cyan)" stroke-width="1.5" opacity="0.8" />
+  <rect x="5" y="5" width="910" height="270" rx="10" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="8 6" opacity="0.5" />
+
+  <!-- Stars / Digital Sparkles -->
+  <g fill="#93c5fd" opacity="0.6">
+    <circle cx="80" cy="40" r="1.5" />
+    <circle cx="160" cy="70" r="1" />
+    <circle cx="280" cy="30" r="1.5" />
+    <circle cx="340" cy="85" r="1" />
+    <circle cx="410" cy="45" r="2" opacity="0.9" filter="url(#glow-filter)" />
+    <circle cx="490" cy="25" r="1" />
+    <circle cx="680" cy="35" r="1.5" />
+    <circle cx="850" cy="65" r="1.5" />
+    <circle cx="780" cy="90" r="1" />
+    <polygon points="120,45 122,48 125,49 122,50 120,53 118,50 115,49 118,48" fill="#38bdf8" />
+    <polygon points="760,40 762,43 765,44 762,45 760,48 758,45 755,44 758,43" fill="#818cf8" />
+  </g>
+
+  <!-- City Skyline Silhouette Backdrop (Bottom) -->
+  <g fill="#070b14" opacity="0.95">
+    <rect x="30" y="220" width="35" height="60" />
+    <rect x="75" y="195" width="45" height="85" />
+    <rect x="130" y="210" width="30" height="70" />
+    <rect x="170" y="180" width="55" height="100" />
+    <rect x="235" y="205" width="40" height="75" />
+    <rect x="285" y="190" width="50" height="90" />
+    <rect x="345" y="225" width="35" height="55" />
+    <rect x="580" y="215" width="40" height="65" />
+    <rect x="630" y="185" width="55" height="95" />
+    <rect x="695" y="205" width="45" height="75" />
+    <rect x="750" y="175" width="50" height="105" />
+    <rect x="810" y="198" width="40" height="82" />
+    <rect x="860" y="220" width="40" height="60" />
+  </g>
+
+  <!-- Lit windows on buildings -->
+  <g fill="#38bdf8" opacity="0.75">
+    <rect x="85" y="205" width="3" height="4" />
+    <rect x="95" y="205" width="3" height="4" />
+    <rect x="85" y="220" width="3" height="4" />
+    <rect x="105" y="235" width="3" height="4" fill="#fbbf24" />
+    <rect x="180" y="195" width="4" height="5" />
+    <rect x="195" y="195" width="4" height="5" />
+    <rect x="180" y="215" width="4" height="5" fill="#a855f7" />
+    <rect x="205" y="225" width="4" height="5" />
+    <rect x="645" y="200" width="4" height="5" />
+    <rect x="665" y="215" width="4" height="5" fill="#f43f5e" />
+    <rect x="765" y="190" width="4" height="5" />
+    <rect x="780" y="205" width="4" height="5" fill="#38bdf8" />
+  </g>
+
+  <!-- LEFT COLUMN: Branding & Intro -->
+  <g transform="translate(45, 45)">
+    <!-- Terminal Tag -->
+    <rect x="0" y="0" width="125" height="24" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="10" y="16" class="font-mono" font-size="11" font-weight="700" fill="#a5b4fc">cthanhdev@root</text>
+
+    <!-- Main Title -->
+    <text x="0" y="65" class="title" font-size="40" fill="url(#neon-cyan)" filter="url(#glow-filter)">
+      CTHANHDEV
+    </text>
+
+    <!-- Subtitle -->
+    <text x="2" y="95" class="font-sans" font-size="15" font-weight="600" fill="#e2e8f0">
+      Software Engineer &amp; Full Stack Developer
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 115)">
+      <!-- Java Badge -->
+      <g transform="translate(0, 0)">
+        <rect width="68" height="22" rx="4" fill="#1e293b" stroke="#e11d48" stroke-width="1" />
+        <text x="34" y="15" class="font-sans" font-size="10" font-weight="700" fill="#f43f5e" text-anchor="middle">☕ JAVA</text>
+      </g>
+      <!-- Spring Badge -->
+      <g transform="translate(74, 0)">
+        <rect width="82" height="22" rx="4" fill="#1e293b" stroke="#16a34a" stroke-width="1" />
+        <text x="41" y="15" class="font-sans" font-size="10" font-weight="700" fill="#4ade80" text-anchor="middle">🌱 SPRING</text>
+      </g>
+      <!-- Python Badge -->
+      <g transform="translate(162, 0)">
+        <rect width="80" height="22" rx="4" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+        <text x="40" y="15" class="font-sans" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">🐍 PYTHON</text>
+      </g>
+      <!-- Docker Badge -->
+      <g transform="translate(248, 0)">
+        <rect width="80" height="22" rx="4" fill="#1e293b" stroke="#2563eb" stroke-width="1" />
+        <text x="40" y="15" class="font-sans" font-size="10" font-weight="700" fill="#60a5fa" text-anchor="middle">🐳 DOCKER</text>
+      </g>
+      <!-- Postgres Badge -->
+      <g transform="translate(334, 0)">
+        <rect width="90" height="22" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+        <text x="45" y="15" class="font-sans" font-size="10" font-weight="700" fill="#93c5fd" text-anchor="middle">🐘 POSTGRES</text>
+      </g>
+    </g>
+
+    <!-- Motto / Status -->
+    <g transform="translate(0, 160)">
+      <circle cx="6" cy="6" r="4" fill="#10b981" filter="url(#glow-filter)" />
+      <text x="18" y="10" class="font-mono" font-size="12" fill="#94a3b8">
+        Status: <tspan fill="#34d399">Building scalable architectures &amp; crafting clean code</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Interactive Terminal Window -->
+  <g transform="translate(500, 32)">
+    <!-- Terminal Box Outer Shadow / Frame -->
+    <rect width="380" height="210" rx="8" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Title Bar -->
+    <path d="M 0 8 Q 0 0 8 0 L 372 0 Q 380 0 380 8 L 380 32 L 0 32 Z" fill="url(#terminal-bar)" />
+    <line x1="0" y1="32" x2="380" y2="32" stroke="#1e293b" stroke-width="1" />
+    
+    <!-- Window controls -->
+    <circle cx="18" cy="16" r="5" fill="#ef4444" />
+    <circle cx="34" cy="16" r="5" fill="#f59e0b" />
+    <circle cx="50" cy="16" r="5" fill="#10b981" />
+    <text x="190" y="20" class="font-mono" font-size="11" fill="#64748b" text-anchor="middle">bash - cthanhdev.sh</text>
+
+    <!-- Terminal Code Body -->
+    <g transform="translate(18, 52)" class="font-mono" font-size="12">
+      <!-- Line 1 -->
+      <text x="0" y="0">
+        <tspan fill="#38bdf8">$</tspan>
+        <tspan fill="#f1f5f9"> system.initialize(</tspan>
+        <tspan fill="#fbbf24">"cthanhdev"</tspan>
+        <tspan fill="#f1f5f9">)</tspan>
+      </text>
+      
+      <!-- Line 2 -->
+      <text x="0" y="24">
+        <tspan fill="#10b981">✓</tspan>
+        <tspan fill="#94a3b8"> Java 21 &amp; Spring Boot</tspan>
+        <tspan fill="#34d399"> [RUNNING]</tspan>
+      </text>
+
+      <!-- Line 3 -->
+      <text x="0" y="48">
+        <tspan fill="#10b981">✓</tspan>
+        <tspan fill="#94a3b8"> PostgreSQL Database</tspan>
+        <tspan fill="#34d399"> [CONNECTED]</tspan>
+      </text>
+
+      <!-- Line 4 -->
+      <text x="0" y="72">
+        <tspan fill="#10b981">✓</tspan>
+        <tspan fill="#94a3b8"> Docker Containers</tspan>
+        <tspan fill="#34d399"> [HEALTHY]</tspan>
+      </text>
+
+      <!-- Line 5 -->
+      <text x="0" y="96">
+        <tspan fill="#10b981">✓</tspan>
+        <tspan fill="#94a3b8"> Python &amp; Data Pipeline</tspan>
+        <tspan fill="#34d399"> [ONLINE]</tspan>
+      </text>
+
+      <!-- Line 6: Prompt & Cursor -->
+      <text x="0" y="124">
+        <tspan fill="#38bdf8">cthanhdev@github:~$</tspan>
+        <tspan fill="#e2e8f0"> deploy --profile=prod</tspan>
+        <tspan fill="#00f2fe" class="cursor">█</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
