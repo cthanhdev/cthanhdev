@@ -21,7 +21,6 @@
   <a href="#-about-me"><img src="https://img.shields.io/badge/%F0%9F%92%AB_About-Me-00f2fe?style=flat-square&labelColor=0d1117" alt="About" /></a>
   <a href="#-languages--tools-i-have-placed-my-hands-on"><img src="https://img.shields.io/badge/%F0%9F%A7%B0_Tech-Stack-6366f1?style=flat-square&labelColor=0d1117" alt="Tech" /></a>
   <a href="#-github-stats"><img src="https://img.shields.io/badge/%F0%9F%93%8A_GitHub-Stats-10b981?style=flat-square&labelColor=0d1117" alt="Stats" /></a>
-  <a href="#-support-me-"><img src="https://img.shields.io/badge/%E2%98%95_Support-Me-f59e0b?style=flat-square&labelColor=0d1117" alt="Support" /></a>
 </p>
 
 ---
@@ -86,13 +85,13 @@
 <h2 id="-github-stats" align="center">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cthanhdev&show_icons=true&theme=tokyonight&hide_border=true&title_color=00f2fe&icon_color=38bdf8&text_color=94a3b8&bg_color=0d1117" alt="cthanhdev GitHub Stats" height="180" />
+  <img src="https://github-stats-extended.vercel.app/api?username=cthanhdev&show_icons=true&theme=tokyonight&hide_border=true&title_color=00f2fe&icon_color=38bdf8&text_color=94a3b8&bg_color=0d1117" alt="cthanhdev GitHub Stats" height="180" />
   &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cthanhdev&theme=tokyonight&hide_border=true&background=0d1117&ring=00f2fe&fire=00f2fe&currStreakLabel=00f2fe" alt="cthanhdev Streak Stats" height="180" />
+  <img src="https://streak-stats.demolab.com/?user=cthanhdev&theme=tokyonight&hide_border=true&background=0d1117&ring=00f2fe&fire=00f2fe&currStreakLabel=00f2fe" alt="cthanhdev Streak Stats" height="180" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cthanhdev&layout=compact&theme=tokyonight&hide_border=true&title_color=00f2fe&text_color=94a3b8&bg_color=0d1117" alt="Most Used Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=cthanhdev&layout=compact&theme=tokyonight&hide_border=true&title_color=00f2fe&text_color=94a3b8&bg_color=0d1117" alt="Most Used Languages" />
 </p>
 
 ---
@@ -128,28 +127,19 @@
 ---
 
 <!-- 7. TOP REPOSITORY & RANDOM DEV QUOTE -->
-<h2 align="center">⭐ Top Contributed &amp; 💬 Dev Quote</h2>
+<h2 align="center">⭐ Top Repository &amp; 💬 Dev Quote</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=cthanhdev&repo=cthanhdev&theme=tokyonight&hide_border=true&title_color=00f2fe&bg_color=0d1117" alt="Pinned Profile Repo" height="155" />
+  <a href="https://github.com/cthanhdev/cthanhdev">
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=cthanhdev&repo=cthanhdev&theme=tokyonight&hide_border=true&title_color=00f2fe&bg_color=0d1117" alt="Pinned Profile Repo" height="155" />
+  </a>
   &nbsp;&nbsp;
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Random Dev Quote" height="155" />
 </p>
 
 ---
 
-<!-- 8. SUPPORT ME -->
-<h2 id="-support-me-" align="center">Support Me 🔥</h2>
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/cthanhdev" target="_blank">
-    <img src="https://img.shields.io/badge/BUY_ME_A_COFFEE-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
-  </a>
-</p>
-
-<br/>
-
-<!-- 9. FOOTER SKYLINE BANNER -->
+<!-- 8. FOOTER SKYLINE BANNER -->
 <p align="center">
   <img src="./assets/footer_skyline.svg" alt="cthanhdev Footer Skyline" width="100%" />
 </p>
