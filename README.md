@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#-about-me"><img src="https://img.shields.io/badge/%F0%9F%92%AB_About-Me-00f2fe?style=flat-square&labelColor=0d1117" alt="About" /></a>
+  <a href="#-education"><img src="https://img.shields.io/badge/%F0%9F%8E%93_Education-3b82f6?style=flat-square&labelColor=0d1117" alt="Education" /></a>
   <a href="#-languages--tools-i-have-placed-my-hands-on"><img src="https://img.shields.io/badge/%F0%9F%A7%B0_Tech-Stack-6366f1?style=flat-square&labelColor=0d1117" alt="Tech" /></a>
   <a href="#-github-stats"><img src="https://img.shields.io/badge/%F0%9F%93%8A_GitHub-Stats-10b981?style=flat-square&labelColor=0d1117" alt="Stats" /></a>
 </p>
@@ -68,6 +69,15 @@
     </td>
   </tr>
 </table>
+
+---
+
+<!-- 3.1 EDUCATION & ACADEMIC BACKGROUND -->
+<h2 id="-education" align="center">🎓 Education &amp; Academic Background</h2>
+
+<p align="center">
+  <img src="./assets/education_card.svg" alt="Ho Chi Minh City Open University (HCMCOU) Education Card" width="760" />
+</p>
 
 ---
 
