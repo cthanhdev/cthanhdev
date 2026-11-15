@@ -9,7 +9,7 @@
 
 <!-- 2. GREETINGS & HEADLINE -->
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00F2FE&center=true&vCenter=true&width=500&lines=cthanhdev+here+%F0%9F%94%A5+!;Software+Engineer;Backend+%26+Full+Stack+Dev" alt="Typing Headline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00F2FE&center=true&vCenter=true&width=560&lines=cthanhdev+here+%F0%9F%94%A5+!;Software+Engineer;Backend+%26+Data+Engineering" alt="Typing Headline" />
 </h1>
 
 <p align="center">
